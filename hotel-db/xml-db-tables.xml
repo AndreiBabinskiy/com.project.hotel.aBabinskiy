@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<db>
+    <db-tables>
+        <db-table name="accounts" table-file="accounts-table.xml">
+            <max-id-value>24</max-id-value>
+        </db-table>
+        
+         <db-table name="citizenships" table-file="citizenships-table.xml">
+            <max-id-value>6</max-id-value>
+        </db-table>
+        
+    </db-tables>
+</db>

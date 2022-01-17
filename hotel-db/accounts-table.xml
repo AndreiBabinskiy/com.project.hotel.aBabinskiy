@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<all-accounts>
+	
+<account>
+        <id>21</id>
+        <login>andrey_2021@mail.ru</login>
+        <password>123</password>
+        <reservation>true</reservation>
+        <oneRoom>false</oneRoom>
+        <twoRoom>true</twoRoom>
+        <threeRoom>false</threeRoom>
+        <usualComfort>false</usualComfort>
+        <juniorSuiteComfort>false</juniorSuiteComfort>
+        <luxComfort>true</luxComfort>
+        <arrivalDate>2021-11-11</arrivalDate>
+        <dateOfDeparture>2021-11-18</dateOfDeparture>
+        <fk_citizenship_id>2</fk_citizenship_id>
+        <male>true</male>
+        <wishes>Подушку в номер!</wishes>
+    </account>
+    <account>
+        <id>22</id>
+        <login>ivanov_21@gmail.com</login>
+        <password>432</password>
+        <reservation>true</reservation>
+        <oneRoom>true</oneRoom>
+        <twoRoom>true</twoRoom>
+        <threeRoom>false</threeRoom>
+        <usualComfort>true</usualComfort>
+        <juniorSuiteComfort>false</juniorSuiteComfort>
+        <luxComfort>true</luxComfort>
+        <arrivalDate>2021-11-12</arrivalDate>
+        <dateOfDeparture>2021-11-25</dateOfDeparture>
+        <fk_citizenship_id>3</fk_citizenship_id>
+        <male>true</male>
+        <wishes>Одеяло в номер.</wishes>
+    </account>
+</all-accounts>

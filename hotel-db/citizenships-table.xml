@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<all-citizenships>
+    <citizenship>
+        <id>1</id>
+        <name>Russia</name>
+        <code>RU</code>
+    </citizenship>
+    <citizenship>
+        <id>2</id>
+        <name>Belarus</name>
+        <code>BY</code>
+    </citizenship>
+    <citizenship>
+        <id>3</id>
+        <name>Ukraine</name>
+        <code>UA</code>
+    </citizenship>
+    <citizenship>
+        <id>4</id>
+        <name>Cermany</name>
+        <code>D</code>
+    </citizenship>
+</all-citizenships>

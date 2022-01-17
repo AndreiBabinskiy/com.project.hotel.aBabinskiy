@@ -1,0 +1,161 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.cell.ComboBoxListCell?>
+<GridPane fx:controller="com.project.aBabinskiy.client.windows.profiles.ProfileController"
+          xmlns:fx="http://javafx.com/fxml" alignment="TOP_LEFT" hgap="10" vgap="10">
+
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <Label text="Enter your Login" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="loginField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Label text="Enter your Password" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <CheckBox fx:id="reservation" text="Reservation" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+    <RadioButton fx:id="maleBtn" text="Male" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+    <RadioButton fx:id="femaleBtn" text="Female" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Label text="Citizenship" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <ComboBox fx:id="citizenship" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="5" >
+
+        <Label text="Code Citizenship" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="citizenshipCodeField"/>
+        <Label text="Name Citizesnhp " GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <TextField fx:id="citizenshipNameField"/>
+
+        <Button text="Add Citizenship" onAction="#addCitizenshipBthPressed" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    </HBox>
+
+    <Label text="Enter Arrival Date" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <DatePicker fx:id="arrivalDate" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+    <Label text="Enter Date of Departure" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    <DatePicker fx:id="dateOfDeparture" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+    <CheckBox fx:id="oneRoom" text="One Room" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+
+    <CheckBox fx:id="twoRoom" text="Two Room" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+
+    <CheckBox fx:id="threeRoom" text="Three Room" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+
+    <CheckBox fx:id="usualComfort" text="Usual" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+
+    <CheckBox fx:id="juniorSuiteComfort" text="JuniorSuite" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+
+    <CheckBox fx:id="luxComfort" text="Lux" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+
+    <TextArea fx:id="allStrs" GridPane.rowIndex="10" GridPane.columnIndex="0" GridPane.columnSpan="10" />
+
+    <Button text="Save Account" onAction="#saveBtnPressed" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+
+    <TableView fx:id="allAccountsGrig" GridPane.rowIndex="12" GridPane.columnIndex="0" GridPane.columnSpan="14">
+        <columns>
+            <TableColumn prefWidth="150" text="Login">
+                <cellValueFactory>
+                    <PropertyValueFactory property="login" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="Password">
+                <cellValueFactory>
+                    <PropertyValueFactory property="password" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="Sex">
+                <cellValueFactory>
+                    <PropertyValueFactory property="maleTitle" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="100" text="Citizenship">
+                <cellValueFactory>
+                    <PropertyValueFactory property="citizenshipName" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="ArrivalDate">
+                <cellValueFactory>
+                    <PropertyValueFactory property="arrivalDate" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="DateOfDeparture">
+                <cellValueFactory>
+                    <PropertyValueFactory property="dateOfDeparture" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="OneRoom">
+                <cellValueFactory>
+                    <PropertyValueFactory property="oneRoom" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="TwoRoom">
+                <cellValueFactory>
+                    <PropertyValueFactory property="twoRoom" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="ThreeRoom">
+                <cellValueFactory>
+                    <PropertyValueFactory property="threeRoom" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="UsualComfort">
+                <cellValueFactory>
+                    <PropertyValueFactory property="usualComfort" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="LuxComfort">
+                <cellValueFactory>
+                    <PropertyValueFactory property="luxComfort" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="JuniorSuiteComfort">
+                <cellValueFactory>
+                    <PropertyValueFactory property="juniorSuiteComfort" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="Reservation">
+                <cellValueFactory>
+                    <PropertyValueFactory property="reservation" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="Wishes">
+                <cellValueFactory>
+                    <PropertyValueFactory property="wishes" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+
+    </TableView>
+
+</GridPane>
